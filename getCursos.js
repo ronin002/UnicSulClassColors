@@ -13,6 +13,8 @@ const replaceBackGround = async() => {
     const divs = await document.getElementsByClassName("js-course-title-element"); 
 
     var today = new Date();
+    //Efeito de teste.. data alterada para month-1 (05/2023)"
+    //today.setMonth(today.getMonth() -1);
 
     var currentMonth = today.getMonth() +1;
 
