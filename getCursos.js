@@ -13,15 +13,11 @@ const replaceBackGround = async() => {
     const divs = await document.getElementsByClassName("js-course-title-element"); 
 
     var today = new Date();
-    //Efeito de teste.. data alterada para MAIO/2023"
-    today.setMonth(today.getMonth() -1);
 
     var currentMonth = today.getMonth() +1;
 
     for(var i =0; i < divs.length; i++){
-        //divs[i].style.background = 'red';
 
-        //alert(divs[i].innerHTML);
         var parentDiv = divs[i].parentNode;
         var parentDiv2 = parentDiv.parentNode;
         parentDiv2.style.background = 'red';
@@ -33,7 +29,6 @@ const replaceBackGround = async() => {
         var classAno = classDate.substring(classDate.length - 4);  
         var classMonth = classDate.substring(0,2);  
         
-        //alert(classDate);
         if (isNaN(classDate)){
             parentDiv2.style.background = 'lightcoral';
             continue;
