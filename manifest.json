@@ -1,0 +1,10 @@
+{
+    "name":"UnicSulExtension",
+    "description": "Extension to change courses colors",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab","scripting","storage"],
+    "action": {
+        "default_popup": "index.html"
+    }
+}
